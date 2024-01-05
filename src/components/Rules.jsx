@@ -6,7 +6,6 @@ const Rules = () => {
   const closeRules = () => {
     const rulesWrap = document.querySelector(".rules-wrap-modal");
     rulesWrap.classList.remove("active");
-    console.log(rulesWrap.classList);
   };
 
   return (

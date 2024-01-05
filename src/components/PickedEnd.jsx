@@ -9,9 +9,6 @@ const PickedEnd = ({ pickedElement, setPoints, points }) => {
   const [housePickedElement, setHousePickedElement] = useState("");
   const [housePickedImgUrl, setHousePickedImgUrl] = useState("");
 
-  console.log("[points, setPoints]");
-  console.log(points);
-
   const updatePoints = (outcome) => {
     // Update points based on the game outcome
     const newPoints =
@@ -154,6 +151,7 @@ const PickedEnd = ({ pickedElement, setPoints, points }) => {
     if (storedPoints) {
       setPoints(parseInt(storedPoints, 10));
     }
+    // eslint-disable-next-line
   }, [pickedElement]);
 
   return (
